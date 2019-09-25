@@ -29,6 +29,12 @@
             sort-by="nome"
             class="elevation-1"
           >
+            <template v-slot:item.perfilSuper="{ item }">
+              <div v-if="item.perfilSuper == true">
+                <v-icon color="warning">mdi-crown</v-icon>
+              </div>
+            </template>
+
             <template v-slot:item.edit="{ item }">
               <v-btn
                 color="primary"
