@@ -12,7 +12,7 @@
 export default {
   metaInfo () {
     return {
-      title: 'Modelo Template'
+      title: 'Tiro de Guerra 04-013'
     }
   }
 }

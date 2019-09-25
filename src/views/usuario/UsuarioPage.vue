@@ -26,6 +26,10 @@
           <v-data-table
             :headers="headers"
             :items="usuarios"
+            :footer-props="{
+              showFirstLastPage: true,
+              itemsPerPageText: 'Qtd por Página'
+            }"
             sort-by="nome"
             class="elevation-1"
           >
@@ -109,6 +113,7 @@ export default {
       nomeUsuario: '',
       idUsuario: '',
       modalDelete: false,
+      textoPaginacao: 'Qtd por Página',
       headers: [
         { text: 'Nome', align: 'left', value: 'nome' },
         { text: 'Login', align: 'left', value: 'login' },
