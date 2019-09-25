@@ -123,7 +123,9 @@ export default {
   methods: {
     ...mapActions('usuarios', {
       getAllUsuarios: 'getAll',
-      deleteUsuario: 'delete',
+      deleteUsuario: 'delete'
+    }),
+    ...mapActions('editUsuario', {
       getUsuarioEditar: 'getUsuarioEdit'
     }),
     openModalDelete (nome, id) {

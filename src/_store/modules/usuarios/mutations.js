@@ -1,5 +1,3 @@
-import { router } from '../../../_helpers'
-
 export default {
 
   getAllRequest (state) {
@@ -15,11 +13,6 @@ export default {
     state.all = { error }
   },
 
-  getUsuario (state, usuario) {
-    state.usuarioEdit = usuario
-    router.push('/editarUsuario')
-  },
-
   registerRequest (state, usuario) {
     state.status = { registering: true }
   },
@@ -27,16 +20,6 @@ export default {
     state.status = {}
   },
   registerFailure (state, error) {
-    state.status = {}
-  },
-
-  updateRequest (state, usuario) {
-    state.status = { registering: true }
-  },
-  updateSuccess (state, usuario) {
-    state.status = {}
-  },
-  updateFailure (state, usuario) {
     state.status = {}
   },
 
